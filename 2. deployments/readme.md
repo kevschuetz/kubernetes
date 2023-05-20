@@ -83,8 +83,17 @@ curl 10.107.79.25:8080
 Get further information about the created service:
 
 ```
-kubectl describe service nging-deployment
+kubectl describe service nginx-deployment
 ```
 
 Notice the endpoints of the service, which are the ip-addresses of our three pods on which the load is "balanced".
+
+Delete the deployment and service:
+
+```
+kubectl delete deployment nginx-deployment
+kubectl delete service nginx-deployment
+```
+
+
 

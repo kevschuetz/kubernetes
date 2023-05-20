@@ -18,12 +18,18 @@ Supported container runtimes:
 - CRI-O
 - containerd
 
--> container runtime must be running on each of the servers (nodes) running on the cluster.
+*Container runtime must be running on each of the servers (nodes) running on the cluster.*
+
+## Tutorials
+The contained mini-tutorials are mostly based on [this](https://www.youtube.com/watch?v=d6WC5n9G_sM&t=3215s) course.
+1. First steps (manually create your first cluster and pod).
+2. Utilize deployments to manage pods and automatically scale them. Create your first service to create a cluster-ip for the created deployment.
+3. Create a NodeJS application and build a custom docker image and manage it using a deplyoment in your k8s cluster.
+4. Expose your web-application to the outside world.
 
 ## Architecture
 
 ![label](overview.png)
-
 
 ## Terminologie
 
@@ -64,11 +70,11 @@ Service on master node:
 - etcd (logs of whole cluster)
 - kube-controller-manager (orchestrates whole cluster)
 
-### kubectl:
+### kubectl
 
 Command line tool to manage clusters remotely over the API Server (REST Interface)
 
-### namespaces:
+### namespaces
 
 Group different resources and configuration objects
 
