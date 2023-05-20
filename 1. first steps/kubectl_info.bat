@@ -1,0 +1,1 @@
+kubectl cluster-info && kubectl get nodes && kubectl get pods && kubectl get namespaces
