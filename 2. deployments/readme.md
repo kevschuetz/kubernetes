@@ -2,7 +2,7 @@
 A deployment automatically manages a pod so that they can be recreated and scaled.
 
 This part will cover the creation of the first deployment for an nginx webserver and also how to create a service for the pod
-so that we can interact with the webserver from the outside world.
+so that we can interact with the webserver from within the cluster without relying on the pod's ip addresses (which are assigned dynamically and therefore not reliable).
 
 ## Create a deployment for the nginx webserver
 ```

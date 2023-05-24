@@ -25,7 +25,9 @@ The contained mini-tutorials are mostly based on [this](https://www.youtube.com/
 1. First steps (manually create your first cluster and pod).
 2. Utilize deployments to manage pods and automatically scale them. Create your first service to create a cluster-ip for the created deployment.
 3. Create a NodeJS application and build a custom docker image and manage it using a deplyoment in your k8s cluster.
-4. Expose your web-application to the outside world.
+4. Expose your web-application to the outside world using a NodePort service.
+5. Install a LoadBalancer service to distribute the load to your deployment.
+6. 
 
 ## Architecture
 

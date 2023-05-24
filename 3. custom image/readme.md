@@ -1,6 +1,6 @@
 # Build and use a custom docker image
 
-In this mini-tutorial, you will build a custom docker image based on a NodeJS web-service, push it to docker hub and use this image to create a deployment in your kubernetes cluster.
+In this mini-tutorial, you will build a custom docker image based on a NodeJS web-service, push it to docker hub and use this image to create a deployment in your kubernetes cluster. Again, we will create a service to expose the pods managed by the deployment to a consisten cluster-ip address. For information how to expose the deployment to the outside world, see the next mini-tutorial.
 
 Additional dependencies for this tutorial:
 - NodeJS
@@ -18,15 +18,15 @@ npm install express
 *When initializing the project, use index.mjs as the entrypoint.*
 This will initialize a NodeJS project.
 
-Create an index.mjs file defining your application.
+Create an [index.mjs](./index.mjs) file defining your application.
 Add a start script to your package.json. (node index.mjs)
 
-To verify if everything worked, run node index.mjs and visit port 3000 in your favourite browser.
+To verify if everything worked, run "node index.mjs" or "npm start" and visit port 3000 in your favourite browser.
 Now you can delete the node_modules folder, as we will not run our app locally but rather build a docker image of it.
 
 # Create a dockerfile and build the image
 
-To build an image for our application, we have to create a dockerfile.
+To build an image for our application, we have to create a [dockerfile](./dockerfile).
 
 Afterwards, we can build the image:
 
